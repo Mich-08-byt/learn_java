@@ -8,3 +8,4 @@ for i in range(a+1):
         coef = coef*(i-j)//(j+1)
 print()
 
+

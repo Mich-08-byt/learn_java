@@ -49,8 +49,12 @@ public class Rectangle {
         float b=sc.nextFloat();// pour lire le premier nombre saisi par lutilisateur
         float g=sc.nextFloat();
         Rectangle d=new Rectangle(b,g);// pour creer un objet de la classe rectangle et pour initialiser les valeurs de l et L avec les valeurs saisies par lutilisateur
-        float perimetre=d.perimetre(b,g);
         float surface=d.surface(b,g);
+        float perimetre=d.perimetre(b,g);
+        System.out.println("largeur: "+b);
+        System.out.println("longueur: "+g);
+        d.setl(-4);
+        d.setL(-5);
         if(b<0 || g<0){
             System.out.println("la longueur et la largeur doivent toujours etre positif");
 

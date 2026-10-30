@@ -1,12 +1,12 @@
-public class Constructeur{ //classe principale
+public class Constructeur{ //classe Constructeur
     private int x; 
     private int y;//(la visibilite de x et y sont de type package)
-    Constructeur(){ // notre constructeur sans paramettre
+    Constructeur(){ // constructeur sans parametre
         this.x=0;
         this.y=0;
     
     }
-    Constructeur(int a){
+    Constructeur(int a){// constructeur avec un parametre
         x=a;
     }
     Constructeur(int x, int y){//constructeur avec paramettre
@@ -17,12 +17,12 @@ public class Constructeur{ //classe principale
         return x;
     }
     public void setx(int x){ // c'est de type void parce que la fonction ne return rien; set c'est pour attribuer une valeur
-        this.x=x;
+        this.x=x;//this.x c'est pour dire que x est un attribut de la classe constructeur et x c'est le parametre de la methode setx
     }
-    public int gety(){ // 
+    public int gety(){ // accesseur pour recuperer la valeur de y
         return y;
     }
-    public void sety(int y){
+    public void sety(int y){ //modificateur pour attribuer une valeur a y
         this.y=y;
     }
 
@@ -38,6 +38,6 @@ public class Constructeur{ //classe principale
         }
         
     }
-}//lors de lexecution quel est le tyoe de fichier qui est produit
+}//lors de lexecution quel est le type de fichier qui est produit
 // ca va vrnir les diagrammes 
 //  une variable static est une variable dont toute les ont acces a un 
